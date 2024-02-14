@@ -37,4 +37,20 @@ func TestSave(t *testing.T) {
 		rp.AssertExpectations(t)
 	})
 
+	t.Run("error save with empty name", func(t *testing.T) {
+		// arrange
+		// - repository mock
+		rp := repository.NewMovieRepositoryMock()
+
+		// - service
+		sv := service.NewMovieService(rp)
+
+		// act
+		_, err := sv.Save("", 8)
+
+		// assert
+		require.Error(t, err)
+		require.ErrorIs(t, err, internal.ErrMovieNotValid)
+	})
+
 }
