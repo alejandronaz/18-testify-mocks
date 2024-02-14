@@ -1,0 +1,7 @@
+mode: set
+app/app/internal/repository/movie.go:5.44,7.2 1 1
+app/app/internal/repository/movie.go:13.61,21.2 4 1
+app/app/internal/repository/movie.go:23.64,25.33 1 0
+app/app/internal/repository/movie.go:25.33,26.21 1 0
+app/app/internal/repository/movie.go:26.21,28.4 1 0
+app/app/internal/repository/movie.go:30.2,30.53 1 0
